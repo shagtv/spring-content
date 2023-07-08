@@ -12,7 +12,6 @@ import java.io.InputStream;
 import java.util.List;
 
 @Component
-@Profile("dev")
 public class DataLoader implements CommandLineRunner {
     private final ContentRepository repository;
     private final ObjectMapper objectMapper;
@@ -24,6 +23,9 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        if (repository.count() > 0) {
+            return;
+        }
         try (InputStream inputStream = TypeReference.class.getResourceAsStream("/data/content.json")) {
             repository.saveAll(objectMapper.readValue(inputStream, new TypeReference<List<Content>>() {}));
         }
