@@ -1,0 +1,32 @@
+[
+  {
+    "id": null,
+    "title": "My First Blog Post",
+    "description": "my first blog post",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-07-08T14:46:46.285654",
+    "dateUpdated": null,
+    "url": ""
+  },
+  {
+    "id": null,
+    "title": "My Second Blog Post",
+    "description": "my second blog post",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-07-08T14:46:46.285654",
+    "dateUpdated": null,
+    "url": ""
+  },
+  {
+    "id": null,
+    "title": "My Third Blog Post",
+    "description": "my third blog post",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-07-08T14:46:46.285654",
+    "dateUpdated": null,
+    "url": ""
+  }
+]
