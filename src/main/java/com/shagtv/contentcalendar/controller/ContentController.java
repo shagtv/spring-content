@@ -32,7 +32,7 @@ public class ContentController {
 
     @GetMapping("/filter/status/{status}")
     public List<Content> listByStatus(@PathVariable Status status) {
-        return repository.listByStatus(status);
+        return repository.findAllByStatus(status);
     }
 
     @GetMapping("/{id}")
