@@ -1,11 +1,11 @@
 package com.shagtv.contentcalendar;
 
-import com.shagtv.contentcalendar.config.ContentCalendarProperties;
+import com.shagtv.contentcalendar.config.RsaKeyProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-@EnableConfigurationProperties(ContentCalendarProperties.class)
+@EnableConfigurationProperties(RsaKeyProperties.class)
 @SpringBootApplication
 public class Application {
 
